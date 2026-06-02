@@ -1,0 +1,19 @@
+.create-event-page { padding: 3rem 0 5rem; }
+.create-header { margin-bottom: 2rem; }
+.create-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.3rem; }
+.create-header p { color: var(--text2); }
+
+.cover-drop {
+  border: 1.5px dashed var(--border2); border-radius: var(--radius);
+  padding: 2rem; text-align: center; cursor: pointer;
+  transition: var(--transition); background: var(--surface);
+  min-height: 130px; display: flex; align-items: center; justify-content: center;
+}
+.cover-drop:hover, .cover-drop.active { border-color: var(--accent); background: var(--accent-bg); }
+.cover-drop.has-image { padding: 0; overflow: hidden; }
+.cover-drop-inner { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.cover-drop-icon { font-size: 2rem; }
+.cover-drop-inner p { font-size: 14px; color: var(--text2); }
+.cover-drop-inner p span { color: var(--accent2); }
+.cover-drop-inner small { color: var(--text3); font-size: 12px; }
+.cover-preview { width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); }

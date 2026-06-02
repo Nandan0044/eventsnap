@@ -1,0 +1,5 @@
+.join-page { padding: 5rem 0; }
+.join-header { text-align: center; margin-bottom: 2rem; }
+.join-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.4rem; }
+.join-header p { color: var(--text2); }
+.join-code-input { font-family: monospace; letter-spacing: 0.2em; text-transform: uppercase; font-size: 1.1rem; text-align: center; }

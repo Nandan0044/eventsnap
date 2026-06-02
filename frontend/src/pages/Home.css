@@ -1,0 +1,73 @@
+.hero {
+  position: relative; overflow: hidden;
+  padding: 6rem 0 5rem; text-align: center;
+  min-height: 520px; display: flex; align-items: center;
+}
+.hero-bg { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+.hero-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(80px); opacity: 0.18;
+}
+.orb1 {
+  width: 500px; height: 500px;
+  background: var(--accent);
+  top: -100px; left: 50%; transform: translateX(-60%);
+}
+.orb2 {
+  width: 350px; height: 350px;
+  background: var(--pink);
+  bottom: -80px; right: 10%;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero-badge { margin: 0 auto 1.5rem; width: fit-content; }
+.hero-title {
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 800; line-height: 1.05;
+  margin-bottom: 1.25rem; letter-spacing: -0.02em;
+}
+.hero-accent {
+  background: linear-gradient(135deg, var(--accent2), var(--pink));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: 1.1rem; color: var(--text2); max-width: 480px;
+  margin: 0 auto 2.5rem; line-height: 1.7;
+}
+.hero-cta {
+  display: flex; align-items: center; gap: 1rem;
+  justify-content: center; flex-wrap: wrap;
+}
+.hero-join { display: flex; gap: 8px; }
+.hero-join-input { width: 180px; font-family: monospace; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.features-section { padding: 5rem 0; }
+.section-label {
+  font-size: 12px; font-weight: 600; color: var(--accent2);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;
+}
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700;
+  margin-bottom: 3rem; max-width: 400px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px; border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+.feature-card {
+  padding: 1.75rem; background: var(--bg2);
+  transition: var(--transition);
+}
+.feature-card:hover { background: var(--surface); }
+.feature-icon { font-size: 1.5rem; display: block; margin-bottom: 0.75rem; }
+.feature-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; font-family: var(--font-display); }
+.feature-desc { font-size: 14px; color: var(--text2); line-height: 1.6; }
+
+.cta-strip {
+  padding: 5rem 0; text-align: center;
+  border-top: 0.5px solid var(--border);
+}
+.cta-strip h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.cta-strip p { color: var(--text2); font-size: 1rem; }
